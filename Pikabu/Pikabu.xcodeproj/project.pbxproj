@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D12F90325C9C4870067701C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12F90225C9C4870067701C /* AppDelegate.swift */; };
+		3D12F90525C9C4870067701C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12F90425C9C4870067701C /* SceneDelegate.swift */; };
+		3D12F90725C9C4870067701C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12F90625C9C4870067701C /* ViewController.swift */; };
+		3D12F90A25C9C4870067701C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D12F90825C9C4870067701C /* Main.storyboard */; };
+		3D12F90C25C9C4890067701C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D12F90B25C9C4890067701C /* Assets.xcassets */; };
+		3D12F90F25C9C4890067701C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D12F90D25C9C4890067701C /* LaunchScreen.storyboard */; };
+		3D12F91A25C9C4890067701C /* PikabuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12F91925C9C4890067701C /* PikabuTests.swift */; };
+		3D12F92525C9C4890067701C /* PikabuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12F92425C9C4890067701C /* PikabuUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D12F91625C9C4890067701C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D12F8F725C9C4870067701C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D12F8FE25C9C4870067701C;
+			remoteInfo = Pikabu;
+		};
+		3D12F92125C9C4890067701C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D12F8F725C9C4870067701C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D12F8FE25C9C4870067701C;
+			remoteInfo = Pikabu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D12F8FF25C9C4870067701C /* Pikabu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pikabu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12F90225C9C4870067701C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D12F90425C9C4870067701C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D12F90625C9C4870067701C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D12F90925C9C4870067701C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D12F90B25C9C4890067701C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D12F90E25C9C4890067701C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D12F91025C9C4890067701C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D12F91525C9C4890067701C /* PikabuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PikabuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12F91925C9C4890067701C /* PikabuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikabuTests.swift; sourceTree = "<group>"; };
+		3D12F91B25C9C4890067701C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D12F92025C9C4890067701C /* PikabuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PikabuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12F92425C9C4890067701C /* PikabuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikabuUITests.swift; sourceTree = "<group>"; };
+		3D12F92625C9C4890067701C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D12F8FC25C9C4870067701C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12F91225C9C4890067701C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12F91D25C9C4890067701C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D12F8F625C9C4870067701C = {
+			isa = PBXGroup;
+			children = (
+				3D12F90125C9C4870067701C /* Pikabu */,
+				3D12F91825C9C4890067701C /* PikabuTests */,
+				3D12F92325C9C4890067701C /* PikabuUITests */,
+				3D12F90025C9C4870067701C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D12F90025C9C4870067701C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D12F8FF25C9C4870067701C /* Pikabu.app */,
+				3D12F91525C9C4890067701C /* PikabuTests.xctest */,
+				3D12F92025C9C4890067701C /* PikabuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D12F90125C9C4870067701C /* Pikabu */ = {
+			isa = PBXGroup;
+			children = (
+				3D12F90225C9C4870067701C /* AppDelegate.swift */,
+				3D12F90425C9C4870067701C /* SceneDelegate.swift */,
+				3D12F90625C9C4870067701C /* ViewController.swift */,
+				3D12F90825C9C4870067701C /* Main.storyboard */,
+				3D12F90B25C9C4890067701C /* Assets.xcassets */,
+				3D12F90D25C9C4890067701C /* LaunchScreen.storyboard */,
+				3D12F91025C9C4890067701C /* Info.plist */,
+			);
+			path = Pikabu;
+			sourceTree = "<group>";
+		};
+		3D12F91825C9C4890067701C /* PikabuTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D12F91925C9C4890067701C /* PikabuTests.swift */,
+				3D12F91B25C9C4890067701C /* Info.plist */,
+			);
+			path = PikabuTests;
+			sourceTree = "<group>";
+		};
+		3D12F92325C9C4890067701C /* PikabuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D12F92425C9C4890067701C /* PikabuUITests.swift */,
+				3D12F92625C9C4890067701C /* Info.plist */,
+			);
+			path = PikabuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D12F8FE25C9C4870067701C /* Pikabu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12F92925C9C4890067701C /* Build configuration list for PBXNativeTarget "Pikabu" */;
+			buildPhases = (
+				3D12F8FB25C9C4870067701C /* Sources */,
+				3D12F8FC25C9C4870067701C /* Frameworks */,
+				3D12F8FD25C9C4870067701C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pikabu;
+			productName = Pikabu;
+			productReference = 3D12F8FF25C9C4870067701C /* Pikabu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D12F91425C9C4890067701C /* PikabuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12F92C25C9C4890067701C /* Build configuration list for PBXNativeTarget "PikabuTests" */;
+			buildPhases = (
+				3D12F91125C9C4890067701C /* Sources */,
+				3D12F91225C9C4890067701C /* Frameworks */,
+				3D12F91325C9C4890067701C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D12F91725C9C4890067701C /* PBXTargetDependency */,
+			);
+			name = PikabuTests;
+			productName = PikabuTests;
+			productReference = 3D12F91525C9C4890067701C /* PikabuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D12F91F25C9C4890067701C /* PikabuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12F92F25C9C4890067701C /* Build configuration list for PBXNativeTarget "PikabuUITests" */;
+			buildPhases = (
+				3D12F91C25C9C4890067701C /* Sources */,
+				3D12F91D25C9C4890067701C /* Frameworks */,
+				3D12F91E25C9C4890067701C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D12F92225C9C4890067701C /* PBXTargetDependency */,
+			);
+			name = PikabuUITests;
+			productName = PikabuUITests;
+			productReference = 3D12F92025C9C4890067701C /* PikabuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D12F8F725C9C4870067701C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3D12F8FE25C9C4870067701C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3D12F91425C9C4890067701C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3D12F8FE25C9C4870067701C;
+					};
+					3D12F91F25C9C4890067701C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3D12F8FE25C9C4870067701C;
+					};
+				};
+			};
+			buildConfigurationList = 3D12F8FA25C9C4870067701C /* Build configuration list for PBXProject "Pikabu" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D12F8F625C9C4870067701C;
+			productRefGroup = 3D12F90025C9C4870067701C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D12F8FE25C9C4870067701C /* Pikabu */,
+				3D12F91425C9C4890067701C /* PikabuTests */,
+				3D12F91F25C9C4890067701C /* PikabuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D12F8FD25C9C4870067701C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12F90F25C9C4890067701C /* LaunchScreen.storyboard in Resources */,
+				3D12F90C25C9C4890067701C /* Assets.xcassets in Resources */,
+				3D12F90A25C9C4870067701C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12F91325C9C4890067701C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12F91E25C9C4890067701C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D12F8FB25C9C4870067701C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12F90725C9C4870067701C /* ViewController.swift in Sources */,
+				3D12F90325C9C4870067701C /* AppDelegate.swift in Sources */,
+				3D12F90525C9C4870067701C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12F91125C9C4890067701C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12F91A25C9C4890067701C /* PikabuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12F91C25C9C4890067701C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12F92525C9C4890067701C /* PikabuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D12F91725C9C4890067701C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D12F8FE25C9C4870067701C /* Pikabu */;
+			targetProxy = 3D12F91625C9C4890067701C /* PBXContainerItemProxy */;
+		};
+		3D12F92225C9C4890067701C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D12F8FE25C9C4870067701C /* Pikabu */;
+			targetProxy = 3D12F92125C9C4890067701C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D12F90825C9C4870067701C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D12F90925C9C4870067701C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D12F90D25C9C4890067701C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D12F90E25C9C4890067701C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D12F92725C9C4890067701C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D12F92825C9C4890067701C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D12F92A25C9C4890067701C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXDT64LHVB;
+				INFOPLIST_FILE = Pikabu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.Pikabu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D12F92B25C9C4890067701C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXDT64LHVB;
+				INFOPLIST_FILE = Pikabu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.Pikabu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D12F92D25C9C4890067701C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXDT64LHVB;
+				INFOPLIST_FILE = PikabuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.PikabuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pikabu.app/Pikabu";
+			};
+			name = Debug;
+		};
+		3D12F92E25C9C4890067701C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXDT64LHVB;
+				INFOPLIST_FILE = PikabuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.PikabuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pikabu.app/Pikabu";
+			};
+			name = Release;
+		};
+		3D12F93025C9C4890067701C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXDT64LHVB;
+				INFOPLIST_FILE = PikabuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.PikabuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pikabu;
+			};
+			name = Debug;
+		};
+		3D12F93125C9C4890067701C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KXDT64LHVB;
+				INFOPLIST_FILE = PikabuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.PikabuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pikabu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D12F8FA25C9C4870067701C /* Build configuration list for PBXProject "Pikabu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12F92725C9C4890067701C /* Debug */,
+				3D12F92825C9C4890067701C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D12F92925C9C4890067701C /* Build configuration list for PBXNativeTarget "Pikabu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12F92A25C9C4890067701C /* Debug */,
+				3D12F92B25C9C4890067701C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D12F92C25C9C4890067701C /* Build configuration list for PBXNativeTarget "PikabuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12F92D25C9C4890067701C /* Debug */,
+				3D12F92E25C9C4890067701C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D12F92F25C9C4890067701C /* Build configuration list for PBXNativeTarget "PikabuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12F93025C9C4890067701C /* Debug */,
+				3D12F93125C9C4890067701C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D12F8F725C9C4870067701C /* Project object */;
+}
