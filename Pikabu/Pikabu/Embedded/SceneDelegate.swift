@@ -5,7 +5,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     internal(set) public var window: UIWindow?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: scene)
+        defaultConfig(window)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) { }
