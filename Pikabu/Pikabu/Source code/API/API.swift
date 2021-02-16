@@ -31,7 +31,7 @@ struct API: GETPOST {
         })
     }
     
-    static func post(to urlStr: String = URLS.post, with postbody: [String:Any], _ completion: (NetworkResult)? = nil) {
+    static func post(to urlStr: String = URLS.postRequest, with postbody: [String:Any], _ completion: (NetworkResult)? = nil) {
         let (queue,group) = (Dispatcher.queues.self,Dispatcher.groups.self)
         group.post.enter()
         queue.post.async(group: group.post, execute: {
