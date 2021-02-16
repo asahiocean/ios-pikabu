@@ -86,6 +86,9 @@
 		3D2E018625D2941000B0CF50 /* FeedPostCellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2E018525D2941000B0CF50 /* FeedPostCellHeaderView.xib */; };
 		3D2E018725D2941000B0CF50 /* FeedPostCellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2E018525D2941000B0CF50 /* FeedPostCellHeaderView.xib */; };
 		3D2E018825D2941000B0CF50 /* FeedPostCellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2E018525D2941000B0CF50 /* FeedPostCellHeaderView.xib */; };
+		3D324C2025DC800E00538FF4 /* navigationBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF734C425DC7DE900B8BF5F /* navigationBarConfig.swift */; };
+		3D324C2425DC800E00538FF4 /* navigationBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF734C425DC7DE900B8BF5F /* navigationBarConfig.swift */; };
+		3D324C2825DC800F00538FF4 /* navigationBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF734C425DC7DE900B8BF5F /* navigationBarConfig.swift */; };
 		3D4F90E225D6DEFE007EA442 /* FooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F90E125D6DEFE007EA442 /* FooterViewModel.swift */; };
 		3D4F90E325D6DEFE007EA442 /* FooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F90E125D6DEFE007EA442 /* FooterViewModel.swift */; };
 		3D4F90E425D6DEFE007EA442 /* FooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F90E125D6DEFE007EA442 /* FooterViewModel.swift */; };
@@ -213,6 +216,7 @@
 		3DF6BD3025D2B9D8007BA7E1 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		3DF6BD5F25D2BF92007BA7E1 /* LoadingErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingErrorView.xib; sourceTree = "<group>"; };
 		3DF6BD6D25D2BF9E007BA7E1 /* LoadingErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingErrorView.swift; sourceTree = "<group>"; };
+		3DF734C425DC7DE900B8BF5F /* navigationBarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationBarConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +529,7 @@
 		3DDCE12225D8FE0600699F55 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DF734C325DC7DCD00B8BF5F /* Extensions */,
 				3DDCE12325D8FE2600699F55 /* FeedViewController.swift */,
 			);
 			path = Controllers;
@@ -546,6 +551,14 @@
 				3DF6BD5F25D2BF92007BA7E1 /* LoadingErrorView.xib */,
 			);
 			path = LoadingErrorView;
+			sourceTree = "<group>";
+		};
+		3DF734C325DC7DCD00B8BF5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DF734C425DC7DE900B8BF5F /* navigationBarConfig.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -700,6 +713,7 @@
 				3D12F98725CA12470067701C /* FeedPost.swift in Sources */,
 				3D4F90EC25D6E22C007EA442 /* HeaderViewModel.swift in Sources */,
 				3D12FDCB25CF29A80067701C /* Worker.swift in Sources */,
+				3D324C2025DC800E00538FF4 /* navigationBarConfig.swift in Sources */,
 				3D12FA2A25CCB8060067701C /* API.swift in Sources */,
 				3D89550725DB4C04002C46D3 /* TopBar.swift in Sources */,
 				3D12FDA625CE747E0067701C /* Handler.swift in Sources */,
@@ -749,6 +763,7 @@
 				3D6DF9B025D1062500199F5E /* IdNib.swift in Sources */,
 				3DE80AE625D9462D0025B1C8 /* PostTextView.swift in Sources */,
 				3D9BA6BC25D3C4D1005E7DE9 /* UIViewMargins.swift in Sources */,
+				3D324C2425DC800E00538FF4 /* navigationBarConfig.swift in Sources */,
 				3D89A43125D6D2530022CBE3 /* FeedPostCellModel.swift in Sources */,
 				3D4F90ED25D6E22C007EA442 /* HeaderViewModel.swift in Sources */,
 				3D90D2E225DBC2CA00E73A0B /* NavigationController.swift in Sources */,
@@ -794,6 +809,7 @@
 				3D6DF9B125D1062500199F5E /* IdNib.swift in Sources */,
 				3DE80AE725D9462D0025B1C8 /* PostTextView.swift in Sources */,
 				3D9BA6BD25D3C4D1005E7DE9 /* UIViewMargins.swift in Sources */,
+				3D324C2825DC800F00538FF4 /* navigationBarConfig.swift in Sources */,
 				3D89A43225D6D2530022CBE3 /* FeedPostCellModel.swift in Sources */,
 				3D4F90EE25D6E22C007EA442 /* HeaderViewModel.swift in Sources */,
 				3D90D2E325DBC2CA00E73A0B /* NavigationController.swift in Sources */,
