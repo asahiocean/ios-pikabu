@@ -6,5 +6,5 @@ protocol FeedPostCellModel {
     var postInfo: FeedPost! { get }
     var stackView: PostStackView! { get }
     var footerView: FooterView! { get }
-    func setContent(from post: FeedPost)
+    func content(from post: FeedPost)
 }

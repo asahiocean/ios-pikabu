@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0i0-8w-CFE" customClass="HeaderView" customModule="Pikabu" customModuleProvider="target">
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0i0-8w-CFE" customClass="HeaderView" customModule="Pikabu" customModuleProvider="target">
                         <rect key="frame" x="20" y="10" width="374" height="50"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="XQP-q5-nTC">
@@ -57,7 +57,7 @@
                         </connections>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXV-DE-pZj">
-                        <rect key="frame" x="28" y="75" width="356" height="33"/>
+                        <rect key="frame" x="28" y="75" width="356" height="34"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="qSK-ZC-7ZO"/>
                         </constraints>
@@ -66,12 +66,12 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZBN-io-SmC" customClass="PostStackView" customModule="Pikabu" customModuleProvider="target">
-                        <rect key="frame" x="28" y="123" width="356" height="1"/>
+                        <rect key="frame" x="28" y="124" width="356" height="0.0"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" identifier="height" id="SCX-CH-6An"/>
+                            <constraint firstAttribute="height" identifier="height" id="SCX-CH-6An"/>
                         </constraints>
                     </stackView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-eY-QQo" customClass="FooterView" customModule="Pikabu" customModuleProvider="target">
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-eY-QQo" customClass="FooterView" customModule="Pikabu" customModuleProvider="target">
                         <rect key="frame" x="20" y="139" width="374" height="50"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y6-qZ-cPs">
@@ -110,22 +110,23 @@
                                     <action selector="favoriteButtonAction:" destination="RKs-eY-QQo" eventType="touchUpInside" id="rxR-9S-Um5"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9kQ-Ct-z2y">
-                                <rect key="frame" x="0.0" y="49" width="374" height="2"/>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esK-hO-kKU">
+                                <rect key="frame" x="0.0" y="49" width="374" height="1"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="LFr-3O-aMF"/>
+                                    <constraint firstAttribute="height" constant="1" id="wjt-Me-YD6"/>
                                 </constraints>
-                            </progressView>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Wd9-mo-Wpz" firstAttribute="centerY" secondItem="RKs-eY-QQo" secondAttribute="centerY" id="6Yd-zo-UKo"/>
+                            <constraint firstItem="esK-hO-kKU" firstAttribute="centerX" secondItem="RKs-eY-QQo" secondAttribute="centerX" id="89B-Ks-BMf"/>
                             <constraint firstItem="Bkp-Cq-CdN" firstAttribute="centerY" secondItem="RKs-eY-QQo" secondAttribute="centerY" id="8Nb-eV-Gk8"/>
-                            <constraint firstItem="9kQ-Ct-z2y" firstAttribute="width" secondItem="RKs-eY-QQo" secondAttribute="width" id="Bjw-Df-p6d"/>
-                            <constraint firstItem="9kQ-Ct-z2y" firstAttribute="centerX" secondItem="RKs-eY-QQo" secondAttribute="centerX" id="LMt-bI-ftI"/>
                             <constraint firstItem="2y6-qZ-cPs" firstAttribute="centerY" secondItem="RKs-eY-QQo" secondAttribute="centerY" id="XbK-JK-VtX"/>
                             <constraint firstItem="Bkp-Cq-CdN" firstAttribute="height" secondItem="2y6-qZ-cPs" secondAttribute="height" id="Yyi-vI-scl"/>
                             <constraint firstAttribute="trailing" secondItem="Bkp-Cq-CdN" secondAttribute="trailing" id="aG1-mU-lGj"/>
-                            <constraint firstAttribute="bottom" secondItem="9kQ-Ct-z2y" secondAttribute="bottom" id="aIb-1a-AEz"/>
+                            <constraint firstAttribute="bottom" secondItem="esK-hO-kKU" secondAttribute="bottom" id="btT-Mr-gcz"/>
+                            <constraint firstItem="esK-hO-kKU" firstAttribute="width" secondItem="RKs-eY-QQo" secondAttribute="width" id="bwo-ah-7zD"/>
                             <constraint firstItem="Wd9-mo-Wpz" firstAttribute="height" secondItem="2y6-qZ-cPs" secondAttribute="height" id="iwG-K9-dzF"/>
                             <constraint firstItem="Bkp-Cq-CdN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wd9-mo-Wpz" secondAttribute="trailing" constant="8" symbolic="YES" id="kM0-gK-IXa"/>
                             <constraint firstItem="Wd9-mo-Wpz" firstAttribute="leading" secondItem="2y6-qZ-cPs" secondAttribute="trailing" constant="10" id="kaj-Hy-i0Z"/>
@@ -160,12 +161,12 @@
                     <constraint firstItem="RKs-eY-QQo" firstAttribute="trailing" secondItem="0i0-8w-CFE" secondAttribute="trailing" id="y32-dL-YIK"/>
                 </constraints>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
             <connections>
                 <outlet property="footerView" destination="RKs-eY-QQo" id="a1V-M0-zdO"/>
                 <outlet property="headerView" destination="0i0-8w-CFE" id="frN-cN-etc"/>
                 <outlet property="label" destination="gXV-DE-pZj" id="cln-3Y-eP9"/>
                 <outlet property="stackView" destination="ZBN-io-SmC" id="nfz-Lx-aHW"/>
-                <outlet property="stackViewHeightConstraint" destination="SCX-CH-6An" id="tRe-ZQ-e8w"/>
             </connections>
             <point key="canvasLocation" x="-265.21739130434787" y="103.79464285714285"/>
         </tableViewCell>
@@ -175,6 +176,9 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
