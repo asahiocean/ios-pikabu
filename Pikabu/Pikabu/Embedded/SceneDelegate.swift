@@ -6,8 +6,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: scene)
-        defaultConfig(window)
+        self.window = UIWindow(windowScene: scene)
+        
+        let feed = FeedViewController()
+        let root = NavigationController(root: feed)
+        self.rootViewController(window, root: root)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) { }

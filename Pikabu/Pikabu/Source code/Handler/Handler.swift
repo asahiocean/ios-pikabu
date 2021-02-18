@@ -6,7 +6,7 @@ final class Handler: Worker {
     
     /// Function for processing data
     /// - Parameter data: Data that needs to be processed for subsequent output
-    internal func worker<T>(_ data: Data, _ completion: @escaping (Result<T?,Error>)->()) where T : AnyCodable {
+    func worker<T>(_ data: Data, _ completion: @escaping (Result<T?,Error>)->()) where T : AnyCodable {
         // Working with the received data
         if let data = data as? T { // If you want to get raw data
             completion(.success(data))

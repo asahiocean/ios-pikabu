@@ -2,14 +2,14 @@ import Foundation
 
 struct FeedPost: Equatable, AnyCodable {
     
-    var id: Int?
-    var title: String?
-    var images: [String]?
-    var body: String?
+    let id: Int
+    let title: String?
+    let images: [String]?
+    let body: String?
     
     var imagesData: [Data?] = []
     
-    internal init(id: Int, title: String, images: [String], body: String) {
+    init(id: Int, title: String, images: [String], body: String) {
         self.id = id
         self.title = title
         self.images = images
@@ -29,10 +29,10 @@ struct FeedPost: Equatable, AnyCodable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        id = try values.decodeIfPresent(Int.self, forKey: .id)
-        images = try values.decodeIfPresent([String].self, forKey: .images)
-        title = try values.decodeIfPresent(String.self, forKey: .title)
-        body = try values.decodeIfPresent(String.self, forKey: .body)
+        id = try values.decodeIfPresent(Int.self, forKey: .id) ?? .init()
+        images = try values.decodeIfPresent([String].self, forKey: .images) ?? .init()
+        title = try values.decodeIfPresent(String.self, forKey: .title) ?? .init()
+        body = try values.decodeIfPresent(String.self, forKey: .body) ?? .init()
     }
     
     func encode(to encoder: Encoder) throws {

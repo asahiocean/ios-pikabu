@@ -6,9 +6,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     internal(set) public var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //        let size = UIScreen.main.bounds
-        //        window = .init(frame: size)
-        //        defaultConfig(window)
         DispatchQueue(label: "com.report.launch", qos: .utility).async {
             API.post(with: ["REPORT":"APP LAUNCH"])
         }

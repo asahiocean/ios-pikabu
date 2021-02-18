@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FooterView" customModule="Pikabu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhL-lb-Qiw">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PhL-lb-Qiw" secondAttribute="height" multiplier="1:1" id="WYM-un-IHe"/>
+                    </constraints>
+                    <state key="normal" image="heart" catalog="system"/>
+                    <connections>
+                        <action selector="likeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nqk-Vh-oIP"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gaw-fE-bqM">
+                    <rect key="frame" x="60" y="0.0" width="125" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX8-wa-pmA">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="eX8-wa-pmA" secondAttribute="height" multiplier="1:1" id="Pby-IV-rbL"/>
+                            </constraints>
+                            <state key="normal" image="message" catalog="system"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="nil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA8-YA-g58">
+                            <rect key="frame" x="65" y="0.0" width="60" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eX8-wa-pmA" firstAttribute="height" secondItem="Gaw-fE-bqM" secondAttribute="height" id="Knr-CC-BJa"/>
+                        <constraint firstItem="nA8-YA-g58" firstAttribute="width" relation="greaterThanOrEqual" secondItem="eX8-wa-pmA" secondAttribute="width" id="Nzi-00-5tx"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-c6-9Ct">
+                    <rect key="frame" x="354" y="0.0" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AZY-c6-9Ct" secondAttribute="height" multiplier="1:1" id="zV7-iE-6CF"/>
+                    </constraints>
+                    <state key="normal" image="star" catalog="system"/>
+                    <connections>
+                        <action selector="favoriteButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bNf-WH-CJ3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PhL-lb-Qiw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1JY-uB-Sdr"/>
+                <constraint firstItem="Gaw-fE-bqM" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="3eC-Mg-J5B"/>
+                <constraint firstItem="PhL-lb-Qiw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8gR-iq-QuZ"/>
+                <constraint firstAttribute="trailing" secondItem="AZY-c6-9Ct" secondAttribute="trailing" id="Dtf-aj-JNA"/>
+                <constraint firstItem="AZY-c6-9Ct" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Jdp-gn-Z02"/>
+                <constraint firstItem="AZY-c6-9Ct" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LZG-cu-uCw"/>
+                <constraint firstItem="PhL-lb-Qiw" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="W4W-Gh-r0L"/>
+                <constraint firstItem="Gaw-fE-bqM" firstAttribute="leading" secondItem="PhL-lb-Qiw" secondAttribute="trailing" id="W7F-Hp-ia1"/>
+                <constraint firstItem="AZY-c6-9Ct" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gaw-fE-bqM" secondAttribute="trailing" constant="150" id="bcN-rq-FnV"/>
+                <constraint firstItem="Gaw-fE-bqM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qcv-uw-6Yb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentsButton" destination="eX8-wa-pmA" id="0Lv-qJ-Pk4"/>
+                <outlet property="commentsCounter" destination="nA8-YA-g58" id="kwW-0C-41M"/>
+                <outlet property="commentsStackView" destination="Gaw-fE-bqM" id="JDE-dz-do6"/>
+                <outlet property="favoriteButton" destination="AZY-c6-9Ct" id="U61-dd-wkY"/>
+                <outlet property="likeButton" destination="PhL-lb-Qiw" id="tiU-7L-jU9"/>
+            </connections>
+            <point key="canvasLocation" x="27.536231884057973" y="84.782608695652186"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
