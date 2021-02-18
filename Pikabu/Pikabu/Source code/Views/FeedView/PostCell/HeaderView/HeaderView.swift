@@ -18,6 +18,8 @@ class HeaderView: UIView, HeaderViewModel {
     }
     
     func photo(_ image: UIImage?) {
+        photo.layer.borderColor = UIColor.systemGray4.cgColor
+        photo.layer.borderWidth = 1
         photo?.layer.cornerRadius = photo.bounds.size.width / 2
         photo?.image = image
     }

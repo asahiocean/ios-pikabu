@@ -4,7 +4,7 @@ import UIKit
 
 extension UIViewController {
     static var id: String { String(describing: self )}
-    static var nib: UINib? { UINib(nibName: id, bundle: nil )}
+    static var nib: UINib { UINib(nibName: id, bundle: nil )}
 }
 
 //MARK: - UIViews -

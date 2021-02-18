@@ -27,9 +27,4 @@ class FooterView: UIView, FooterViewModel {
             sender.setImage(Icons.star.disable, for: .normal)
         }
     }
-    
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        self.layer.cornerRadius = 10
-    }
 }

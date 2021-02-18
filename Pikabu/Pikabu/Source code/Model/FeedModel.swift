@@ -35,6 +35,7 @@ final class FeedModel {
         })
         group.request.notify(queue: .main, execute: { [weak self] in
             self?.feedView?.reloadData()
+            self?.feedView?.layoutIfNeeded()
             if let ids = self?.storage?.feed.compactMap({$0.id}) {
                 API.post(with: ["Post IDs" : ids])
             }

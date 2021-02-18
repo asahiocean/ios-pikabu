@@ -2,9 +2,10 @@ import UIKit
 
 enum brokenImage {
     
-    static func label(_ fontSize: CGFloat = 18) -> UILabel {
+    static func label(fontSize: CGFloat = 18) -> UILabel {
         let label = UILabel()
-        label.backgroundColor = UIColor.systemBackground.withAlphaComponent(0.5)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 0.6525524215)
         label.font = .boldSystemFont(ofSize: fontSize)
         label.textAlignment = .center
         label.numberOfLines = 2
