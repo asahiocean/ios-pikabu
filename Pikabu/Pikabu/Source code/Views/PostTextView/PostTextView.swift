@@ -6,6 +6,8 @@ class PostTextView: UITextView {
     
     fileprivate func extractedFunc() {
         backgroundColor = .clear
+        showsVerticalScrollIndicator = false
+        showsHorizontalScrollIndicator = false
         
         isUserInteractionEnabled = false
         isScrollEnabled = false
