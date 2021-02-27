@@ -1,6 +1,6 @@
 import Foundation
 
-struct FeedPost: Equatable, AnyCodable {
+@objc class FeedPost: NSObject, AnyCodable {
     
     let id: Int
     let title: String?
@@ -9,15 +9,11 @@ struct FeedPost: Equatable, AnyCodable {
     
     var imagesData: [Data?] = []
     
-    init(id: Int, title: String, images: [String], body: String) {
+    internal init(id: Int, title: String, images: [String], body: String) {
         self.id = id
         self.title = title
         self.images = images
         self.body = body
-    }
-    
-    static func == (lhs: FeedPost, rhs: FeedPost) -> Bool {
-        return lhs.id == rhs.id && lhs.title == rhs.title && lhs.images == rhs.images && lhs.body == rhs.body
     }
     
     enum CodingKeys: String, CodingKey {
@@ -27,7 +23,7 @@ struct FeedPost: Equatable, AnyCodable {
         case body = "body"
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         id = try values.decodeIfPresent(Int.self, forKey: .id) ?? .init()
         images = try values.decodeIfPresent([String].self, forKey: .images) ?? .init()
@@ -41,5 +37,11 @@ struct FeedPost: Equatable, AnyCodable {
         try container.encodeIfPresent(title, forKey: .title)
         try container.encodeIfPresent(images, forKey: .images)
         try container.encodeIfPresent(body, forKey: .body)
+    }
+}
+
+extension FeedPost { // Equatable extension
+    static func == (lhs: FeedPost, rhs: FeedPost) -> Bool {
+        return lhs.id == rhs.id && lhs.title == rhs.title && lhs.images == rhs.images && lhs.body == rhs.body
     }
 }

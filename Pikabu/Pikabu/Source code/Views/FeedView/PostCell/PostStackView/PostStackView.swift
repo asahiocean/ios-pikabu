@@ -2,13 +2,15 @@ import UIKit
 
 class PostStackView: UIStackView {
     
-    func append(_ view: UIView) {
+    internal func append(_ view: UIView) {
         setNeedsLayout()
         view.constraintHeightWidth()
         setHeightConstraint(equal: view.bounds.height)
         addArrangedSubview(view)
         layoutIfNeeded()
     }
+    
+    //MARK: - Init & Setup -
     
     fileprivate func setup() {
         distribution = .fill // or .fillProportionally
@@ -36,8 +38,10 @@ class PostStackView: UIStackView {
     }
 }
 
+//MARK: - Extension -
+
 extension PostStackView {
-    @objc private final func setHeightConstraint(equal value: CGFloat) {
+    @objc private func setHeightConstraint(equal value: CGFloat) {
         self.constraints.forEach({ // (value) in
             guard $0.identifier == "height" else { return }
             let height: CGFloat = $0.constant + value
@@ -49,7 +53,7 @@ extension PostStackView {
         })
     }
     
-    @objc open func removeAllArrangedSubviews() {
+    @objc open func removeAll() {
         self.arrangedSubviews.forEach({
             NSLayoutConstraint.deactivate($0.constraints)
             self.removeArrangedSubview($0)

@@ -88,4 +88,16 @@ extension API {
         request.networkServiceType = .background
         request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
     }
+    
+    static func brokenImageReport(_ post: FeedPost, data: Data?) {
+        if let i = post.imagesData.firstIndex(of: data) {
+            DispatchQueue.global(qos: .utility).async {
+                let dict: Dictionary = [
+                    "POST ID": post.id,
+                    "POST URL": URLS.postID(post.id),
+                    "IMAGE URL": post.images?[i] as Any]
+                API.post(with: ["BROKEN_IMAGE": dict])
+            }
+        }
+    }
 }

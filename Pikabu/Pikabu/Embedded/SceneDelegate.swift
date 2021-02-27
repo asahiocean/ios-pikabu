@@ -9,8 +9,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: scene)
         
         let feed = FeedViewController()
-        let root = NavigationController(root: feed)
-        self.rootViewController(window, root: root)
+        let navi = UINavigationController(rootViewController: feed)
+        self.defaultViewController(window, navi)
     }
     
     func sceneDidDisconnect(_ scene: UIScene) { }

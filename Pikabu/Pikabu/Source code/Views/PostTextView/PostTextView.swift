@@ -1,17 +1,8 @@
 import UIKit
 
-final class PostTextView: UITextView {
+class PostTextView: UITextView {
     
-    override var text: String! {
-        didSet {
-            self.sizeToFit()
-        }
-    }
-    
-    convenience init(_ size: CGSize, _ text: String) {
-        self.init(frame: CGRect(origin: .zero, size: size))
-        self.text = text
-    }
+    override var text: String! { didSet { sizeToFit() } }
     
     fileprivate func extractedFunc() {
         backgroundColor = .clear
@@ -26,9 +17,14 @@ final class PostTextView: UITextView {
         textAlignment = .left
         
         textContainer.lineBreakMode = .byWordWrapping
-        textContainer.lineFragmentPadding = 0.0
+        textContainer.lineFragmentPadding = 0
         textContainerInset = .zero
         contentInset = .zero
+    }
+    
+    convenience init(_ size: CGSize, _ text: String) {
+        self.init(frame: CGRect(origin: .zero, size: size))
+        self.text = text
     }
     
     override init(frame: CGRect, textContainer: NSTextContainer?) {

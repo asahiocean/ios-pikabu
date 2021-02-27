@@ -1,6 +1,10 @@
 import Foundation
 
-final class Handler: Worker {
+protocol Worker {
+    func worker<T>(_ data: Data, _ completion: @escaping (Result<T?,Error>)->()) where T: AnyCodable
+}
+
+class Handler: Worker {
     
     static let shared = Handler()
     
@@ -17,26 +21,15 @@ final class Handler: Worker {
                 decoder.dateDecodingStrategy = .iso8601
                 let model = try decoder.decode(T?.self, from: data)
                 switch model {
-                case var feeds as [FeedPost]:
+                case let feeds as [FeedPost]:
                     for i in feeds.indices { //MARK: Loading images for posts
                         guard let urls = feeds[i].images else { continue }
-                        for url in urls {
-                            let data = try? Data(contentsOf: URL(string: url)!)
+                        urls.forEach({
+                            let data = try? Data(contentsOf: URL(string: $0)!)
                             feeds[i].imagesData.append(data)
-                            if i == feeds.endIndex - 1 {
-                                completion(.success(feeds as? T))
-                            }
-//                            API.get(to: url, with: { (result: Result<Data?,Error>) in
-//                                do {
-//                                    let data = try result.get()
-//                                    feeds[i].imagesData.append(data)
-//                                    if i == feeds.endIndex - 1 {
-//                                        completion(.success(feeds as? T))
-//                                    }
-//                                } catch {
-//                                    fatalError("FAIL LOAD IMAGE: \(url)\n\(error.localizedDescription)")
-//                                }
-//                            })
+                        })
+                        if i == feeds.endIndex - 1 {
+                            completion(.success(feeds as? T))
                         }
                     }
                 default:

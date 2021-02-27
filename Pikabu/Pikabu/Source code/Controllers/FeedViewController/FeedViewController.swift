@@ -1,15 +1,21 @@
 import UIKit
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIViewController, UITableViewDelegate {
     
-    private var feedView: FeedView!
+    fileprivate var feedView: FeedView!
+    internal weak var profile: ProfileViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.isUserInteractionEnabled = true
-        
-        feedView = .init(vc: self, .network)
-        feedView?.model?.fetch()
+        feedView = .init(view.frame, .posts)
+        self.view.addSubview(feedView)
+        feedView.model?.updater()
         navigationBarConfig()
+        profile = .shared
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        feedView.reloadData()
     }
 }

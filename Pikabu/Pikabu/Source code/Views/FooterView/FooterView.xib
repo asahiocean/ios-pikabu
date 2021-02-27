@@ -18,6 +18,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="PhL-lb-Qiw" secondAttribute="height" multiplier="1:1" id="WYM-un-IHe"/>
                     </constraints>
+                    <color key="tintColor" systemColor="systemRedColor"/>
                     <state key="normal" image="heart" catalog="system"/>
                     <connections>
                         <action selector="likeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nqk-Vh-oIP"/>
@@ -50,6 +51,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="AZY-c6-9Ct" secondAttribute="height" multiplier="1:1" id="zV7-iE-6CF"/>
                     </constraints>
+                    <color key="tintColor" systemColor="systemOrangeColor"/>
                     <state key="normal" image="star" catalog="system"/>
                     <connections>
                         <action selector="favoriteButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bNf-WH-CJ3"/>
@@ -86,6 +88,12 @@
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

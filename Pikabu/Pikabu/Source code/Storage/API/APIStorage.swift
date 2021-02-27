@@ -1,7 +1,7 @@
 import Foundation
 
 //MARK: - APIStorage -
-final class APIStorage: CacheProvider {
+class APIStorage: CacheProvider {
     
     //MARK: - MemoryCache -
     private class MemoryCache: CacheHandler {
@@ -9,12 +9,12 @@ final class APIStorage: CacheProvider {
         
         //MARK: MemoryCache load
         func load(_ key: String) -> Data? {
-            cache.object(forKey: key.ns()) as Data?
+            cache.object(forKey: NSString(string: key)) as Data?
         }
         
         //MARK: MemoryCache save
         func save(_ key: String, _ data: Data) {
-            cache.setObject(data.ns(), forKey: key.ns())
+            cache.setObject(NSData(data: data), forKey: NSString(string: key))
         }
         
         //MARK: MemoryCache remove
