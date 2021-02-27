@@ -7,7 +7,7 @@ extension UITableView {
     open func separatorConfig() {
         Self.separatorColorBackup = separatorColor ?? .clear
         separatorColor = .clear
-        let ins = separatorInset.left
-        separatorInset = .init(top: 0, left: ins, bottom: 0, right: ins)
+        let i = separatorInset.left
+        separatorInset = .init(top: 0, left: i, bottom: 0, right: i)
     }
 }

@@ -2,19 +2,17 @@ import UIKit
 
 extension FeedViewController: UINavigationControllerDelegate {
     
-    @objc internal final func presentProfile(_ sender: AnyObject?) {
-        let profileVC = ProfileViewController.shared
-        
+    @objc fileprivate func presentProfile(_ sender: AnyObject?) {
         if let nav = navigationController {
-            nav.pushViewController(profileVC, animated: true)
+            nav.pushViewController(profile, animated: true)
         } else {
-            present(profileVC, animated: true, completion: nil)
+            present(profile, animated: true, completion: nil)
         }
     }
     
     // MARK: - Navigation bar config -
     
-    internal final func navigationBarConfig() {
+    internal func navigationBarConfig() {
         guard let nav = navigationController else { fatalError("nil") }
         nav.delegate = self
         navigationItem.title = Bundle.main.appName
@@ -22,17 +20,17 @@ extension FeedViewController: UINavigationControllerDelegate {
         // MARK: To customize the button
         let size = nav.navigationBar.bounds.size
         let value: CGFloat = min(size.height, size.width) * 0.9
-        let image = UserInfo.image?.withRenderingMode(.alwaysOriginal)
+        let avatar = Userinfo.image?.withRenderingMode(.alwaysOriginal)
         
         // MARK: Reference Button Setup
         // This button will serve as a reference,
         // since it has the required dimensions and an embedded image
         let button = UIButton(type: .custom)
-        button.setImage(image, for: .normal)
+        button.setImage(avatar, for: .normal) // user photo
         button.frame.size = .init(width: value, height: value)
         button.imageView?.layer.cornerRadius = button.frame.width / 2
         button.imageView?.layer.borderColor = UIColor.systemGreen.cgColor
-        button.imageView?.layer.borderWidth = 1
+        button.imageView?.layer.borderWidth = 2.0
         
         // Assembling the button into the required type
         let barButton = UIBarButtonItem(customView: button)
@@ -52,18 +50,16 @@ extension FeedViewController: UINavigationControllerDelegate {
             button.showsMenuAsPrimaryAction = false
             
             //MARK: Primary action with short touch
-            let action = UIAction(title: "action", handler: { [weak self] in
-                self?.presentProfile($0)
-            })
+            let action = UIAction(title: "", handler: { self.presentProfile($0) })
             button.addAction(action, for: .touchUpInside)
             
             //MARK: Show the menu on the long press
             button.menu = UIMenu(title: "", options: [], children: [
-                UIAction(title: "Favorites (\(LocalStorage.shared.feed.count))", image: Icons.star.enable, handler: { (action) in
-                    
+                UIAction(title: "Favorites", image: Icons.favorite.enable, handler: { (action) in
+                    //
                 }),
-                UIAction(title: "Liked (\(LocalStorage.shared.feed.count))", image: Icons.heart.enable, handler: { (action) in
-                    
+                UIAction(title: "Liked", image: Icons.favorite.enable, handler: { (action) in
+                    //
                 })
             ])
             

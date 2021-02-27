@@ -1,7 +1,6 @@
-import Foundation
 import UIKit
 
-enum UserInfo {
+enum Userinfo {
     static var username: String? = "username"
     static var image: UIImage? = UIImage(named: "avatar")
 }
