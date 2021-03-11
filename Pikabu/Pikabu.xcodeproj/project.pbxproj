@@ -364,11 +364,11 @@
 			isa = PBXGroup;
 			children = (
 				3D6050AC25D53FFA005FC80D /* BrokenLabel.swift */,
+				3D9DEB9725E9372E004E5E30 /* SemiternaryOperator.swift */,
 				3D12FA8C25CD0A1A0067701C /* TypeAliases.swift */,
 				3D12FA6225CCF3B60067701C /* Dispatcher */,
 				3DC2422025E149F800395FCF /* Enums */,
 				3D12F95925CA0DC60067701C /* Extensions */,
-				3D9DEB9725E9372E004E5E30 /* SemiternaryOperator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -509,10 +509,10 @@
 		3D324C2D25DC807B00538FF4 /* ProfileViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3D88CAAD25DFC5A90031B582 /* ProfileCollectionView */,
-				3D88CA8625DFA7E10031B582 /* ProfileCollectionViewCell */,
 				3DAC507425E5C0DD00926936 /* ProfileViewController.swift */,
 				3DAC507525E5C0DD00926936 /* ProfileViewController.xib */,
+				3D88CAAD25DFC5A90031B582 /* ProfileCollectionView */,
+				3D88CA8625DFA7E10031B582 /* ProfileCollectionViewCell */,
 			);
 			path = ProfileViewController;
 			sourceTree = "<group>";

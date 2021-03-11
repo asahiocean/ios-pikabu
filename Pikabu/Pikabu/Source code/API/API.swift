@@ -7,7 +7,7 @@ struct API: GETPOST {
     static func get(to urlStr: String, with completion: @escaping NetworkResult) {
         let (queue,group) = (Dispatcher.queues.self,Dispatcher.groups.self)
         group.get.enter()
-        queue.get.async(group: group.get, execute: { () -> Void in
+        queue.get.async(group: Dispatcher.groups.get, execute: { () -> Void in
             guard let url: URL = URL(string: urlStr) else { fatalError("Failed to create URL") }
             var request: URLRequest = URLRequest(url: url)
             self.requestConfig(&request, .get)
